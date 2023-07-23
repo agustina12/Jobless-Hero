@@ -1,0 +1,21 @@
+/* nav.js */
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+.main-nav .header-logo > h3 {
+  margin-top: 0;
+}
+.main-nav .menu-nav > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px 20px;
+}
+.main-nav .menu-nav > ul > li {
+  list-style: none;
+}
+
+/* end nav.js */

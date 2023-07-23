@@ -1,10 +1,11 @@
+import "../assets/css/style.css";
 function Nav() {
   return (
     <nav className="main-nav">
-      <div>
+      <div className="header-logo">
         <h3>Jobless</h3>
       </div>
-      <div>
+      <div className="menu-nav">
         <ul>
           <li>Home</li>
           <li>Discover</li>
