@@ -1,3 +1,4 @@
+import "../assets/css/style.css";
 import figmaLogo from "../assets/image1.png";
 import facebookLogo from "../assets/image2.png";
 import vercelLogo from "../assets/image3.png";
@@ -7,9 +8,11 @@ function Intro2() {
     <div className="main-card">
       <h3>Feature Jobs</h3>
       <div className="group-card">
-        <div className="card">
+        <div className="card active">
           <div className="header-card">
-            <img src={figmaLogo} alt="Logo" />
+            <div className="logo-figma">
+              <img src={figmaLogo} alt="Logo" />
+            </div>
             <div className="title-card">
               <h2>Front-End Developer</h2>
               <p>Figma</p>
@@ -21,14 +24,17 @@ function Intro2() {
               team.
             </p>
           </div>
+          <hr />
           <div className="footer-card">
-            <span>Rust</span>
-            <p>$70,000 - $90,000</p>
+            <p className="cat"> Rust</p>
+            <p className="price">$70,000 - $90,000</p>
           </div>
         </div>
         <div className="card">
           <div className="header-card">
-            <img src={facebookLogo} alt="Logo" />
+            <div className="logo-facebook">
+              <img src={facebookLogo} alt="Logo" />
+            </div>
             <div className="title-card">
               <h2>Data Scientist</h2>
               <p>Facebook</p>
@@ -44,7 +50,9 @@ function Intro2() {
         </div>
         <div className="card">
           <div className="header-card">
-            <img src={vercelLogo} alt="Logo" />
+            <div className="logo-vercel">
+              <img src={vercelLogo} alt="Logo" />
+            </div>
             <div className="title-card">
               <h2>Technical Writer</h2>
               <p>Vercel</p>

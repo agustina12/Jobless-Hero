@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 body {
   background: linear-gradient(
     90deg,
@@ -8,11 +9,12 @@ body {
   );
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 .App {
   background: rgba(246, 250, 255, 0.9);
   backdrop-filter: blur(10px);
-  padding: 0 10em 0 10em;
+  padding: 0 7rem 0 7rem;
 }
 
 /* .App-logo {

@@ -7,13 +7,13 @@ function Nav() {
       </div>
       <div className="menu-nav">
         <ul>
-          <li>Home</li>
+          <li className="active">Home</li>
           <li>Discover</li>
           <li>Post a Job</li>
           <li>Contact Us</li>
         </ul>
       </div>
-      <div>
+      <div className="btn-sing-up">
         <button>Sing Up</button>
       </div>
     </nav>
