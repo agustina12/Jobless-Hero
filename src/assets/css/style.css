@@ -2,6 +2,7 @@
 :root {
   --vt-c-black: #000;
   --vt-c-blue: #001aff;
+  --vt-c-facebook: #1877f2;
   --vt-c-blue-dark: #27307e;
   --vt-c-white: #fff;
 }
@@ -159,18 +160,45 @@
   border-radius: 0.5rem;
   background: var(--vt-c-white);
 }
+.main-card .group-card .header-card .logo-facebook {
+  display: flex;
+  width: 3.125rem;
+  height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: var(--vt-c-facebook);
+}
+.main-card .group-card .header-card .logo-vercel {
+  display: flex;
+  width: 3.125rem;
+  height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: var(--vt-c-black);
+}
 
 .main-card .group-card .active .header-card .title-card {
   color: var(--vt-c-white);
 }
-.main-card .group-card .header-card .title-card > h2 {
+.main-card .group-card .card .header-card .title-card > h2 {
   margin: 0;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
-.main-card .group-card .header-card .title-card > p {
+.main-card .group-card .card .header-card .title-card > p {
+  margin: 0;
+  color: var(--vt-c-black);
+  opacity: 50%;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main-card .group-card .active .header-card .title-card > p {
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.875rem;
@@ -178,20 +206,35 @@
   font-weight: 400;
   line-height: normal;
 }
-.main-card .group-card .body-card p {
+.main-card .group-card .active .body-card > p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.875rem; /* 187.5% */
 }
+.main-card .group-card .body-card > p {
+  color: var(--vt-c-black);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem; /* 187.5% */
+}
 
-.group-card .active > hr {
+.group-card .active .hr-active {
   height: 0.0625rem;
   width: 22rem;
   align-self: stretch;
   background-color: var(--vt-c-white);
   opacity: 30%;
+  border: none;
+}
+.group-card .card > hr {
+  height: 0.0625rem;
+  width: 22rem;
+  align-self: stretch;
+  background-color: var(--vt-c-black);
+  opacity: 10%;
   border: none;
 }
 
@@ -202,7 +245,7 @@
   align-self: stretch;
 }
 
-.group-card .card .footer-card > .cat {
+.group-card .active .footer-card > .cat {
   padding: 8px 20px 8px 20px;
   border-radius: 6.25rem;
   background: rgba(255, 255, 255, 0.15);
@@ -210,7 +253,20 @@
   font-weight: 600;
   margin: 0;
 }
-.price {
+.card .footer-card .cat {
+  padding: 8px 20px 8px 20px;
+  border-radius: 6.25rem;
+  background: rgba(0, 0, 0, 0.07);
+  color: var(--vt-c-color);
+  font-weight: 600;
+  margin: 0;
+}
+.card .footer-card .price {
+  color: var(--vt-c-black);
+  font-weight: 600;
+  margin: 0;
+}
+.active .footer-card .price {
   color: var(--vt-c-white);
   font-weight: 600;
   margin: 0;

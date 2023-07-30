@@ -24,7 +24,7 @@ function Intro2() {
               team.
             </p>
           </div>
-          <hr />
+          <hr className="hr-active" />
           <div className="footer-card">
             <p className="cat"> Rust</p>
             <p className="price">$70,000 - $90,000</p>
@@ -43,9 +43,10 @@ function Intro2() {
           <div className="body-card">
             <p>We are seeking a data scientist to join our team.</p>
           </div>
+          <hr />
           <div className="footer-card">
-            <span>Python</span>
-            <p>$100,000 - $130,000</p>
+            <p className="cat"> Python</p>
+            <p className="price">$100,000 - $130,000</p>
           </div>
         </div>
         <div className="card">
@@ -61,9 +62,10 @@ function Intro2() {
           <div className="body-card">
             <p>We are seeking a technical writer to join our team.</p>
           </div>
+          <hr />
           <div className="footer-card">
-            <span>Documentation</span>
-            <p>$60,000 - $80,000</p>
+            <p className="cat"> Documentation</p>
+            <p className="price">$60,000 - $80,000</p>
           </div>
         </div>
       </div>
